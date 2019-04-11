@@ -6,7 +6,8 @@ If user open page protected by guard, and this guard want use some data from ser
 
 Demonstarte bug:
 
-- Open http://localhost:4201 
+- Open page which is not protected by guard http://localhost:4201 
+- Config service load config normally, protected routerLinks works (because config is loaded).
 - You get console output:
 
 ```
@@ -17,6 +18,7 @@ Navigated to http://localhost:4201/
 Angular is running in the development mode. Call enableProdMode() to enable the production mode.
 ```
 - Open (or reload) page protected with guard http://localhost:4201/test1
+- Config service start loading config, but guard, (which want use data from config), is fired before is config loaded (before httpClient.get Promise is resolved).
 - You get console output:
 
 ```
