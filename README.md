@@ -11,7 +11,7 @@ Demonstarte bug:
 - You get console output:
 
 ```
-Navigated to http://localhost:4201/
+Navigate to http://localhost:4201/
 ~~~> configServiceFactory called with configUrl: /assets/config/config.json
 ~~~> ConfigService#load: start
 ~~~> ConfigService#load: in http client response {apiUrl: "http://localhost:3000/api/graph"}
@@ -22,7 +22,7 @@ Angular is running in the development mode. Call enableProdMode() to enable the 
 - You get console output:
 
 ```
-Navigated to http://localhost:4201/test1
+Navigate to http://localhost:4201/test1
 ~~~> configServiceFactory called with configUrl: /assets/config/config.json
 ~~~> ConfigService#load: start
 ~~~> configFactory called
